@@ -1,10 +1,9 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Detail from "./Detail/Detail";
 import Footer from "./Footer/Footer";
 import Items from "./Items/Items";
 import LandingPage from "./LandingPage/LandingPage";
 import NavBar from "./NavBar/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ExTable from "./example/ExTable";
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/movie/:movieId" element={<Detail />} />
             <Route path="/items" element={<Items />} />
-            <Route path="/example/table" element={<ExTable />} />
           </Routes>
         </Router>
       </div>
